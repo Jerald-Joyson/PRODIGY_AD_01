@@ -9,18 +9,18 @@ class CalcButton extends StatelessWidget {
   final Function callback;
 
   const CalcButton({
-    Key? key,
+    super.key,
     required this.text,
     this.fillColor = 0xFF1F272C,
     this.textColor = 0xFFFFFFFF,
     this.textSize = 28,
     required this.callback,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: const EdgeInsets.all(10),
       child: SizedBox(
         width: 65,
         height: 65,
